@@ -113,31 +113,6 @@ mcp-fortress quarantine list
 mcp-fortress quarantine release <server-name>
 ```
 
-### API Keys
-
-```bash
-# Create API key
-mcp-fortress keys create --name "My Key"
-
-# List keys
-mcp-fortress keys list
-
-# Revoke key
-mcp-fortress keys revoke --id <key-id>
-```
-
----
-
-## 🎓 Documentation
-
-- [Installation Guide](docs/installation.md)
-- [Quick Start Guide](docs/quickstart.md)
-- [Command Reference](docs/commands.md)
-- [API Documentation](docs/api.md)
-- [Troubleshooting](docs/troubleshooting.md)
-
----
-
 ## 🏗️ Architecture
 
 ```
@@ -183,31 +158,7 @@ Unlock achievements as you scan:
 - 🧪 **Lab Rat** - Scan 100 packages
 - And 12 more!
 
----
-
-## 🛠️ Development
-
-### Prerequisites
-- Node.js 18+
-- npm or yarn
-
-### Local Development
-
-```bash
-# Clone the repository
-git clone https://github.com/mcp-fortress/mcp-fortress.git
-cd mcp-fortress
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
----
-
-## 📊 Pricing
+## 📊 Tiers
 
 ### Free Tier (Local Mode)
 - ✅ Unlimited scans
@@ -217,14 +168,6 @@ npm run dev
 - ✅ No account needed
 - ❌ No cloud sync
 - ❌ No team features
-
-### Pro Tier ($19/month) - Coming Soon
-- ✅ Everything in Free
-- ✅ Cloud sync (access from anywhere)
-- ✅ Team collaboration
-- ✅ API access
-- ✅ CI/CD integration
-- ✅ Priority support
 
 ---
 
