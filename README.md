@@ -71,13 +71,32 @@ npx mcp-fortress start
 ### Start the Server
 
 ```bash
+# Start server (foreground)
 mcp-fortress start
+
+# Start server in background (daemon mode)
+mcp-fortress start --daemon
 ```
 
 **Options:**
 - `-p, --port <port>` - API port (default: 3001)
 - `-h, --host <host>` - Host to bind (default: localhost)
 - `--no-browser` - Don't open browser automatically
+- `-d, --daemon` - Run server in background
+
+### Daemon Commands
+
+```bash
+# Stop the daemon server
+mcp-fortress stop
+
+# Check daemon status
+mcp-fortress status
+
+# View server logs
+mcp-fortress logs
+mcp-fortress logs --lines 100  # Show last 100 lines
+```
 
 ### Scan a Package
 
@@ -124,7 +143,10 @@ mcp-fortress/
 └── SQLite Database     → Local data storage
 ```
 
-**Data Location:** `~/.mcp-fortress/fortress.db`
+**Data Location:**
+- `~/.mcp-fortress/fortress.db` - SQLite database
+- `~/.mcp-fortress/server.pid` - Daemon process ID
+- `~/.mcp-fortress/logs/` - Server logs
 
 ---
 
