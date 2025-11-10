@@ -200,13 +200,6 @@ Unlock achievements as you scan:
 - ❌ No team features
 
 ### Need Pro Tier?
-- ✅ Unlimited scans
-- ✅ Full UI with gamification
-- ✅ All achievements
-- ✅ Local database
-- ✅ No account needed
-- ❌ No cloud sync
-- ❌ No team features
 
 **Email:** mcp-fortress@protonmail.com
 
