@@ -21,6 +21,12 @@ That's it! The web UI will open at `http://localhost:3000`
 
 ---
 
+## 🎬 Demo
+
+![MCP Fortress CLI Demo](./assets/demo.gif)
+
+---
+
 ## ✨ Features
 
 ### 🔍 **Automated Security Scanning**
