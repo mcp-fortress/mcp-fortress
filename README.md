@@ -23,7 +23,9 @@ That's it! The web UI will open at `http://localhost:3000`
 
 ## 🎬 Demo
 
-![MCP Fortress CLI Demo](./assets/demo.gif)
+<p align="center">
+  <img src="./assets/demo.gif" alt="MCP Fortress Demo" width="800">
+</p>
 
 ---
 
