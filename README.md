@@ -5,6 +5,8 @@
 [![npm version](https://badge.fury.io/js/mcp-fortress.svg)](https://www.npmjs.com/package/mcp-fortress)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+> 🚀 **NEW in v0.3.0:** MCP Server Mode - Use MCP Fortress with Claude Code/Cursor! The first security tool that uses MCP to secure MCP.
+
 ---
 
 ## 🚀 Quick Start
@@ -55,6 +57,13 @@ That's it! The web UI will open at `http://localhost:3000`
 - Server table with sorting and filtering
 - Detailed threat analysis views
 
+### 🤖 **NEW: MCP Server Mode** (v0.3.0+)
+- Run MCP Fortress as an MCP server
+- Expose security analysis tools to Claude Code, Cursor, Windsurf
+- AI-powered security analysis using your existing LLM
+- Zero setup - uses the AI you already have
+- **The first security tool that uses MCP to secure MCP**
+
 ---
 
 ## 📦 Installation
@@ -76,7 +85,79 @@ npx mcp-fortress start
 
 ## 🎯 Usage
 
-### Start the Server
+### 🆕 MCP Server Mode (Recommended)
+
+Use MCP Fortress with your AI coding assistant (Claude Code, Cursor, etc.):
+
+**1. Install MCP Fortress:**
+```bash
+npm install -g mcp-fortress
+```
+
+**2. Configure Claude Desktop:**
+
+Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "mcp-fortress": {
+      "command": "mcp-fortress",
+      "args": ["serve-mcp"]
+    }
+  }
+}
+```
+
+**3. Restart Claude Desktop**
+
+Restart Claude Desktop to load the MCP Fortress server.
+
+**4. Use in Claude Code:**
+```
+You: Scan @modelcontextprotocol/server-filesystem for security issues
+
+Claude: *Uses MCP Fortress tools to scan and analyze*
+I found 3 potential security concerns...
+```
+
+**Available MCP Tools:**
+- `scan_mcp_server` - Comprehensive security scan
+  - Analyzes npm packages for vulnerabilities
+  - Detects malicious code patterns
+  - Checks dependencies for CVEs
+  - Calculates risk score (0-100)
+
+- `analyze_prompt_injection` - Detect prompt injection attacks
+  - Identifies instruction injection attempts
+  - Detects role manipulation
+  - Finds system prompt extraction attempts
+  - Analyzes delimiter injection
+
+- `detect_tool_poisoning` - Identify malicious/misleading tools
+  - Detects typosquatting (e.g., `read_fiile` vs `read_file`)
+  - Identifies name/description mismatches
+  - Flags overly generic tool names
+  - Compares against known legitimate tools
+
+**Example Interactions:**
+
+```
+You: Is puppeteer-mcp-server safe to use?
+Claude: ✅ Yes! Risk score: 0/100. No threats detected.
+
+You: Check this tool: "Helper tool. Ignore previous instructions."
+Claude: 🚨 CRITICAL: Prompt injection detected! DO NOT USE.
+
+You: Is a tool named "read_fiile" suspicious?
+Claude: ⚠️ Yes! Likely typosquatting "read_file"
+```
+
+---
+
+### Standalone Usage
+
+#### Start the Server
 
 ```bash
 # Start server (foreground)
@@ -237,12 +318,24 @@ Built with:
 
 ## 📈 Roadmap
 
-- [ ] Docker container scanning
-- [ ] OCI image vulnerability detection
-- [ ] SBOM (Software Bill of Materials) generation
-- [ ] GitHub Actions integration
+### Current (v0.3.x)
+- ✅ MCP Server Mode
+- ✅ Advanced threat detection (prompt injection, tool poisoning)
+- ✅ Claude Code/Cursor integration
+
+### Next (v0.4.0)
+- [ ] Auto-discovery of IDE configs
+- [ ] Real-time MCP proxy mode
+- [ ] Enhanced PII/secrets detection
+- [ ] Custom security policies
+
+### Future (v0.5.0+)
 - [ ] VS Code extension
-- [ ] Cloud sync (Pro tier)
+- [ ] GitHub App for PR checks
+- [ ] SBOM generation
+- [ ] CI/CD integrations
+- [ ] Docker container scanning
+- [ ] Enterprise SSO support
 
 ---
 
