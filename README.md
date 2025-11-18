@@ -69,26 +69,55 @@ That's it! The web UI will open at `http://localhost:3000`
 
 ## 📦 Installation
 
-### Option 1: Smithery (Easiest - Hosted)
+### Option 1: Smithery Remote (Recommended - Easiest)
 
-Install via [Smithery](https://smithery.ai/server/@mcp-fortress/mcp-fortress-server):
+#### Method A: Smithery CLI (Automated)
 
 ```bash
 npx @smithery/cli install @mcp-fortress/mcp-fortress-server --client claude
 ```
 
-### Option 2: Global Install (Recommended for Local)
+#### Method B: Manual (With API Key)
+
+1. Get your API key from [Smithery](https://smithery.ai/server/@mcp-fortress/mcp-fortress-server)
+2. Add to Claude:
+
+```bash
+claude mcp add --transport http mcp-fortress "https://server.smithery.ai/@mcp-fortress/mcp-fortress-server/mcp?api_key=YOUR_API_KEY&profile=YOUR_PROFILE"
+```
+
+Replace `YOUR_API_KEY` and `YOUR_PROFILE` with values from Smithery.
+
+**Benefits:**
+- ✅ No local installation
+- ✅ Auto-updates
+- ✅ Zero setup
+
+### Option 2: Local Install (Advanced)
 
 ```bash
 npm install -g mcp-fortress
-mcp-fortress start
 ```
 
-### Option 3: npx (No Install)
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 
-```bash
-npx mcp-fortress start
+```json
+{
+  "mcpServers": {
+    "mcp-fortress": {
+      "command": "mcp-fortress",
+      "args": ["serve-mcp"]
+    }
+  }
+}
 ```
+
+Restart Claude Desktop.
+
+**Benefits:**
+- ✅ Full control
+- ✅ Works offline
+- ✅ No API key needed
 
 ---
 
