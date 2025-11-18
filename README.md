@@ -2,10 +2,11 @@
 
 **Security scanner and runtime protection for Model Context Protocol (MCP) servers**
 
+[![smithery badge](https://smithery.ai/badge/@mcp-fortress/mcp-fortress-server)](https://smithery.ai/server/@mcp-fortress/mcp-fortress-server)
 [![npm version](https://badge.fury.io/js/mcp-fortress.svg)](https://www.npmjs.com/package/mcp-fortress)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> 🚀 **NEW in v0.3.0:** MCP Server Mode - Use MCP Fortress with Claude Code/Cursor! The first security tool that uses MCP to secure MCP.
+> 🚀 **NEW in v0.3.6:** Enhanced scanner with improved false-positive detection! The first security tool that uses MCP to secure MCP.
 
 ---
 
@@ -68,14 +69,22 @@ That's it! The web UI will open at `http://localhost:3000`
 
 ## 📦 Installation
 
-### Option 1: Global Install (Recommended)
+### Option 1: Smithery (Easiest - Hosted)
+
+Install via [Smithery](https://smithery.ai/server/@mcp-fortress/mcp-fortress-server):
+
+```bash
+npx @smithery/cli install @mcp-fortress/mcp-fortress-server --client claude
+```
+
+### Option 2: Global Install (Recommended for Local)
 
 ```bash
 npm install -g mcp-fortress
 mcp-fortress start
 ```
 
-### Option 2: npx (No Install)
+### Option 3: npx (No Install)
 
 ```bash
 npx mcp-fortress start
