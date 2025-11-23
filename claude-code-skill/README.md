@@ -31,7 +31,11 @@ Install directly from Claude Code's plugin marketplace:
 
 That's it! The skill is now active and ready to use.
 
-**The MCP server is automatically installed** when you install via marketplace - no additional configuration needed! 🎉
+**Both remote AND local MCP servers are automatically installed** when you install via marketplace - no additional configuration needed! 🎉
+
+You'll get:
+- **mcp-fortress** (remote): Instant access via Smithery
+- **mcp-fortress-local** (stdio): Auto-installs via npx when needed
 
 ### Option 2: Manual Installation
 
