@@ -21,6 +21,11 @@
     "mcp-fortress": {
       "type": "http",
       "url": "https://server.smithery.ai/@mcp-fortress/mcp-fortress-server/mcp"
+    },
+    "mcp-fortress-local": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "mcp-fortress", "serve-mcp"]
     }
   }
 }

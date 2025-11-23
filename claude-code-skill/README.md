@@ -31,6 +31,8 @@ Install directly from Claude Code's plugin marketplace:
 
 That's it! The skill is now active and ready to use.
 
+**The MCP server is automatically installed** when you install via marketplace - no additional configuration needed! 🎉
+
 ### Option 2: Manual Installation
 
 1. Clone or download this repository
@@ -40,9 +42,11 @@ That's it! The skill is now active and ready to use.
 
 3. Restart Claude Code
 
-## Prerequisites
+**Note:** Manual installation requires separate MCP server setup (see Prerequisites below).
 
-This skill requires the **MCP Fortress MCP server** to be installed and configured.
+## Prerequisites (Manual Installation Only)
+
+If you installed manually, you'll need to configure the **MCP Fortress MCP server** separately.
 
 ### Quick Setup - Remote Server (Recommended)
 
