@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MCP Fortress - Security scanner and runtime protection for Model Context Protocol servers">
+    <meta name="keywords" content="MCP, security, scanner, Model Context Protocol, vulnerabilities, prompt injection">
+    <title>MCP Fortress - Secure Your MCP Servers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🏰</span>
+                    <span class="logo-text">MCP Fortress</span>
+                </div>
+                <nav class="nav">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#quickstart" class="nav-link">Quick Start</a>
+                    <a href="#docs" class="nav-link">Docs</a>
+                    <a href="https://github.com/mcp-fortress/mcp-fortress" class="nav-link" target="_blank">GitHub</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">Security for the AI Era</div>
+                <h1 class="hero-title">Secure Your MCP Servers</h1>
+                <p class="hero-description">
+                    Comprehensive security scanning and runtime protection for Model Context Protocol servers.
+                    Detect vulnerabilities, prevent prompt injection attacks, and identify malicious tools before they compromise your AI systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#quickstart" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com/mcp-fortress/mcp-fortress" class="btn btn-secondary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                    <a href="https://smithery.ai/server/@mcp-fortress/mcp-fortress-server" class="btn btn-secondary" target="_blank">View on Smithery</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">3</div>
+                        <div class="stat-label">Security Tools</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Open Source</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">MIT</div>
+                        <div class="stat-label">License</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Security Analysis</h2>
+            <p class="section-description">Three powerful tools to protect your MCP infrastructure</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">Vulnerability Scanning</h3>
+                    <p class="feature-description">
+                        Scan MCP packages for security vulnerabilities, dangerous code patterns, and CVE exposures.
+                        Analyze dependencies and calculate comprehensive risk scores.
+                    </p>
+                    <ul class="feature-list">
+                        <li>NPM package analysis</li>
+                        <li>CVE database lookup</li>
+                        <li>Dangerous pattern detection</li>
+                        <li>Dependency tree scanning</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Prompt Injection Detection</h3>
+                    <p class="feature-description">
+                        Analyze tool descriptions and prompts for injection attacks. Detect instruction overrides,
+                        role manipulation, and system prompt extraction attempts.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Instruction injection patterns</li>
+                        <li>Role manipulation detection</li>
+                        <li>System prompt extraction</li>
+                        <li>Delimiter injection checks</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚠️</div>
+                    <h3 class="feature-title">Tool Poisoning Prevention</h3>
+                    <p class="feature-description">
+                        Identify malicious, misleading, or shadowing tools. Detect typosquatting,
+                        name-description mismatches, and suspicious reassurance language.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Name shadowing detection</li>
+                        <li>Typosquatting analysis</li>
+                        <li>Semantic mismatch detection</li>
+                        <li>Suspicious language patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Section -->
+    <section id="quickstart" class="quickstart">
+        <div class="container">
+            <h2 class="section-title">Get Started in Seconds</h2>
+            <p class="section-description">Choose your deployment method</p>
+
+            <div class="quickstart-grid">
+                <div class="quickstart-card">
+                    <h3 class="quickstart-title">
+                        <span class="quickstart-number">1</span>
+                        Remote Server (Easiest)
+                    </h3>
+                    <p class="quickstart-description">Connect to our hosted server instantly - no installation required</p>
+                    <div class="code-block">
+                        <pre><code>{
+  "mcpServers": {
+    "mcp-fortress": {
+      "url": "https://server.smithery.ai/@mcp-fortress/mcp-fortress-server/mcp"
+    }
+  }
+}</code></pre>
+                    </div>
+                    <p class="quickstart-note">Add to <code>claude_desktop_config.json</code> and restart Claude Desktop</p>
+                </div>
+
+                <div class="quickstart-card">
+                    <h3 class="quickstart-title">
+                        <span class="quickstart-number">2</span>
+                        Local Installation
+                    </h3>
+                    <p class="quickstart-description">Run MCP Fortress locally with full control</p>
+                    <div class="code-block">
+                        <pre><code># Install globally
+npm install -g mcp-fortress
+
+# Configure Claude Desktop
+{
+  "mcpServers": {
+    "mcp-fortress": {
+      "command": "mcp-fortress",
+      "args": ["serve-mcp"]
+    }
+  }
+}</code></pre>
+                    </div>
+                    <p class="quickstart-note">Available on <a href="https://www.npmjs.com/package/mcp-fortress" target="_blank">npm</a> and the <a href="https://registry.modelcontextprotocol.io" target="_blank">MCP Registry</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+        <div class="container">
+            <h2 class="section-title">Built for Security-Conscious Teams</h2>
+
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <div class="use-case-icon">👨‍💻</div>
+                    <h3>For Developers</h3>
+                    <p>Scan MCP servers before installation. Verify package integrity and detect malicious code during development.</p>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-icon">🏢</div>
+                    <h3>For Enterprises</h3>
+                    <p>Enforce security policies across your organization. Audit MCP servers and maintain compliance standards.</p>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-icon">🔬</div>
+                    <h3>For Researchers</h3>
+                    <p>Analyze MCP security patterns. Study prompt injection techniques and contribute to AI safety research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Secure Your MCP Servers?</h2>
+                <p class="cta-description">Join developers and security teams using MCP Fortress to protect their AI infrastructure</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/mcp-fortress/mcp-fortress" class="btn btn-primary" target="_blank">Get Started Free</a>
+                    <a href="https://registry.modelcontextprotocol.io" class="btn btn-secondary" target="_blank">View on MCP Registry</a>
+                    <a href="https://smithery.ai/server/@mcp-fortress/mcp-fortress-server" class="btn btn-secondary" target="_blank">View on Smithery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🏰</span>
+                        <span class="logo-text">MCP Fortress</span>
+                    </div>
+                    <p class="footer-description">
+                        Open source security for Model Context Protocol servers
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/mcp-fortress/mcp-fortress">GitHub</a></li>
+                        <li><a href="https://www.npmjs.com/package/mcp-fortress">npm Package</a></li>
+                        <li><a href="https://registry.modelcontextprotocol.io">MCP Registry</a></li>
+                        <li><a href="https://smithery.ai/server/@mcp-fortress/mcp-fortress-server">Smithery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/mcp-fortress/mcp-fortress/issues">Issues</a></li>
+                        <li><a href="https://github.com/mcp-fortress/mcp-fortress/discussions">Discussions</a></li>
+                        <li><a href="mailto:mcp-fortress@protonmail.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MCP Fortress. Released under the MIT License.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/mcp-fortress/mcp-fortress" target="_blank" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
