@@ -17,20 +17,28 @@ The MCP Fortress skill enables Claude Code to automatically scan MCP servers for
 
 ## Installation
 
-### Option 1: Manual Installation
+### Option 1: From Marketplace (Recommended) ⚡
 
-1. Clone or download this skill directory
-2. Copy the `skills/mcp-fortress/` folder to your Claude Code skills directory:
+Install directly from Claude Code's plugin marketplace:
+
+```bash
+# Add the MCP Fortress marketplace
+/plugin marketplace add mcp-fortress/mcp-fortress
+
+# Install the skill
+/plugin install mcp-fortress
+```
+
+That's it! The skill is now active and ready to use.
+
+### Option 2: Manual Installation
+
+1. Clone or download this repository
+2. Copy the `claude-code-skill/skills/mcp-fortress/` folder to your Claude Code skills directory:
    - **macOS/Linux**: `~/.claude-code/skills/mcp-fortress/`
    - **Windows**: `%USERPROFILE%\.claude-code\skills\mcp-fortress\`
 
 3. Restart Claude Code
-
-### Option 2: As a Plugin
-
-Copy the entire `claude-code-skill/` directory to your Claude Code plugins folder:
-- **macOS/Linux**: `~/.claude-code/plugins/mcp-fortress/`
-- **Windows**: `%USERPROFILE%\.claude-code\plugins\mcp-fortress\`
 
 ## Prerequisites
 

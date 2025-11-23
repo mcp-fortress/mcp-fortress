@@ -1,0 +1,39 @@
+{
+  "name": "mcp-fortress",
+  "owner": {
+    "name": "MCP Fortress",
+    "email": "mcp-fortress@protonmail.com"
+  },
+  "metadata": {
+    "description": "Security scanning tools for Model Context Protocol servers",
+    "version": "1.0.0",
+    "pluginRoot": "./claude-code-skill"
+  },
+  "plugins": [
+    {
+      "name": "mcp-fortress",
+      "source": "./skills/mcp-fortress",
+      "description": "Scan MCP servers for security vulnerabilities, prompt injection attacks, and tool poisoning. Automatically activates when users ask about MCP server safety.",
+      "version": "1.0.0",
+      "author": {
+        "name": "MCP Fortress",
+        "email": "mcp-fortress@protonmail.com"
+      },
+      "homepage": "https://mcp-fortress.github.io/mcp-fortress/",
+      "repository": "https://github.com/mcp-fortress/mcp-fortress",
+      "license": "MIT",
+      "keywords": [
+        "security",
+        "mcp",
+        "vulnerability",
+        "scanning",
+        "prompt-injection",
+        "tool-poisoning",
+        "safety"
+      ],
+      "category": "security",
+      "tags": ["security", "mcp", "scanning"],
+      "strict": false
+    }
+  ]
+}
