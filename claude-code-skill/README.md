@@ -29,13 +29,18 @@ Install directly from Claude Code's plugin marketplace:
 /plugin install mcp-fortress
 ```
 
-That's it! The skill is now active and ready to use.
+**Important: One-time Authentication Required**
 
-**Both remote AND local MCP servers are automatically installed** when you install via marketplace - no additional configuration needed! 🎉
+After installing the plugin, you need to authenticate with Smithery (takes 30 seconds):
 
-You'll get:
-- **mcp-fortress** (remote): Instant access via Smithery
-- **mcp-fortress-local** (stdio): Auto-installs via npx when needed
+1. In Claude Code, run: `/mcp`
+2. Find `mcp-fortress` in the server list
+3. Click to authenticate - a browser window will open
+4. Log in with your Smithery account (or create one - it's free)
+5. Smithery will generate an API key for you
+6. Done! The skill is now active and ready to use 🎉
+
+**The MCP server is automatically installed** when you install via marketplace - just authenticate once and you're set!
 
 ### Option 2: Manual Installation
 
