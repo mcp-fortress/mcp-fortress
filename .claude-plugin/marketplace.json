@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "mcp-fortress",
-      "source": "./skills/mcp-fortress",
+      "source": "./claude-code-skill/skills/mcp-fortress",
       "description": "Scan MCP servers for security vulnerabilities, prompt injection attacks, and tool poisoning. Automatically activates when users ask about MCP server safety.",
       "version": "1.0.0",
       "author": {
