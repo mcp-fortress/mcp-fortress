@@ -1,0 +1,20 @@
+{
+  "name": "mcp-fortress",
+  "version": "1.0.0",
+  "description": "MCP Fortress security scanning skill for Claude Code - scan MCP servers for vulnerabilities, prompt injection, and tool poisoning",
+  "author": "MCP Fortress <mcp-fortress@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcp-fortress/mcp-fortress"
+  },
+  "homepage": "https://mcp-fortress.github.io/mcp-fortress/",
+  "keywords": [
+    "security",
+    "mcp",
+    "vulnerability",
+    "scanning",
+    "prompt-injection",
+    "tool-poisoning"
+  ]
+}
