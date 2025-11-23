@@ -12,6 +12,25 @@
 
 ## 🚀 Quick Start
 
+### For Claude Code Users (Easiest!)
+
+```bash
+# Install the Claude Code plugin
+/plugin marketplace add mcp-fortress/mcp-fortress
+/plugin install mcp-fortress
+
+# Authenticate with Smithery (opens in browser)
+/mcp
+```
+
+Done! Now ask Claude: **"Is @modelcontextprotocol/server-github safe to install?"**
+
+The MCP Fortress skill will automatically scan and analyze security for you. No setup, no configuration - just install and ask! 🎉
+
+📖 [Full Claude Code Installation Guide](./claude-code-skill/README.md)
+
+### Standalone Installation
+
 ```bash
 # Install globally
 npm install -g mcp-fortress
