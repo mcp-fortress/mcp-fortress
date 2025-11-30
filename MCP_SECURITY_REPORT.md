@@ -73,6 +73,36 @@ I scanned **13 popular MCP servers** including:
 - External network requests
 - Dependency vulnerabilities
 - Risk scoring
+- **NEW: Prompt injection vulnerabilities in tool descriptions**
+- **NEW: Tool poisoning attempts (name shadowing, typosquatting)**
+
+---
+
+## Tool-Level Security Testing
+
+In addition to package-level scans, I performed comprehensive tool-level security analysis using MCP Fortress's prompt injection and tool poisoning detection capabilities.
+
+**Tests Performed:**
+- 🔍 **Prompt Injection Analysis**: 47+ tools tested for malicious instruction injection
+- 🛡️ **Tool Poisoning Detection**: 47+ tools tested for name shadowing and misleading descriptions
+
+### Results Summary
+
+✅ **Prompt Injection**: 0 vulnerabilities found across all 13 servers
+✅ **Tool Poisoning**: 0 malicious tools detected
+✅ **Tool Descriptions**: All factual and safe
+✅ **Tool Names**: All legitimate and descriptive
+
+**Key Findings:**
+- All official Anthropic MCP servers: Perfect score (0 issues)
+- Community servers: Clean tool implementations
+- No instruction override patterns found
+- No role manipulation attempts detected
+- No suspicious reassurance language in production servers
+
+**Full Tool Security Report:** [MCP_TOOL_SECURITY_TESTS.md](./MCP_TOOL_SECURITY_TESTS.md)
+
+This additional layer of security testing ensures that not only are the packages themselves safe, but the tools they expose to AI agents cannot be used to manipulate agent behavior through malicious descriptions.
 
 ---
 
