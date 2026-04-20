@@ -337,10 +337,6 @@ Unlock achievements as you scan:
 - ❌ No cloud sync
 - ❌ No team features
 
-### Need Pro Tier?
-
-**Email:** mcp-fortress@protonmail.com
-
 ---
 
 ## 🐛 Support
