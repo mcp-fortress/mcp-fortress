@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/mcp-fortress-mcp-fortress-badge.png)](https://mseep.ai/app/mcp-fortress-mcp-fortress)
+
 # 🏰 MCP Fortress
 
 **Security scanner and runtime protection for Model Context Protocol (MCP) servers**
